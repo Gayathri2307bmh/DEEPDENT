@@ -59,10 +59,7 @@ teeth = sorted(teeth, key=lambda t: t[1][0])
 
 tooth_id = 1
 
-# Simple FDI numbering: assume left to right, upper and lower
-# Upper: 11-18 (left), 21-28 (right)
-# Lower: 31-38 (left), 41-48 (right)
-# But for simplicity, assign 1-32 sequentially, adjust for upper/lower based on y position
+
 
 mid_y = image.shape[0] // 2  # approximate mid line
 
@@ -97,11 +94,9 @@ for (tooth, (x, y, w, h)), fdi in zip(teeth, fdi_numbers):
 
 print("Prediction complete.")
 
-# cv2.imshow("DeepDent AI Diagnosis",image)
 
-# cv2.waitKey(0)
-# cv2.destroyAllWindows()
 
 # Save the result
 cv2.imwrite("dental_diagnosis_result.jpg", image)
+
 print("Result saved as dental_diagnosis_result.jpg")
