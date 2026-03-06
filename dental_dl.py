@@ -130,6 +130,3 @@ if os.path.exists(opg_dir):
 else:
     print("OPG directory not found.")
 
-# Note: For tooth isolation and FDI numbering, this code provides classification.
-# For full segmentation and numbering, advanced models like Mask R-CNN would be needed.
-# This is a starting point for the classification part.
