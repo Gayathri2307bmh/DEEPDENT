@@ -9,7 +9,7 @@ DEEPDENT is an AI-based system that analyzes panoramic dental X-rays (OPG) to de
 - Prediction visualization on X-ray images
 
 ## Model Used
-We used **ResNet (Residual Neural Network)** architecture for image classification.  
+We used **MobileNetV2** architecture for image classification.  
 ResNet helps in extracting deep features from dental radiographs and improves classification performance.
 
 ## Project Pipeline
